@@ -1181,7 +1181,7 @@ Text GLabel 1600 3000 2    39   Output ~ 0
 LED3
 Text GLabel 1600 3100 2    39   Output ~ 0
 LED4
-Text GLabel 1600 4000 2    39   Output ~ 0
+Text GLabel 1600 3200 2    39   Output ~ 0
 LED5
 Text GLabel 1600 3900 2    39   Output ~ 0
 LED6
@@ -1655,7 +1655,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 3900 1450 3900
 Wire Wire Line
-	1450 4000 1600 4000
+	1450 3200 1600 3200
 Wire Wire Line
 	3000 6250 3300 6250
 Wire Wire Line
@@ -1898,7 +1898,6 @@ Connection ~ 5750 1250
 Wire Wire Line
 	5750 1450 5750 1500
 NoConn ~ 1450 2600
-NoConn ~ 1450 3200
 NoConn ~ 1450 5200
 NoConn ~ 1450 5300
 NoConn ~ 1450 5400
@@ -2283,12 +2282,12 @@ $Comp
 L tinkerforge:CHOKE_CM T101
 U 1 1 5DED9798
 P 4700 2800
-F 0 "T101" V 5250 2500 70  0000 L CNN
-F 1 "744273222" V 5150 2500 70  0000 L CNN
+F 0 "T101" H 4600 2200 70  0000 L CNN
+F 1 "744273222" H 4450 2350 70  0000 L CNN
 F 2 "kicad-libraries:WE-SL5" H 4700 3097 60  0001 C CNN
 F 3 "" H 4700 2800 60  0000 C CNN
 	1    4700 2800
-	0    1    -1   0   
+	1    0    0    1   
 $EndComp
 Text Notes 4300 3300 0    50   ~ 0
 Alternativ 744272251
@@ -2459,4 +2458,30 @@ Wire Wire Line
 Connection ~ 7150 2300
 Wire Wire Line
 	7150 2300 7400 2300
+Text GLabel 1600 4800 2    39   Output ~ 0
+SPI-MOSI
+Text GLabel 1600 4600 2    39   Output ~ 0
+SPI-CLK
+Text GLabel 1600 4000 2    39   Output ~ 0
+SPI-CS
+Text GLabel 1600 4700 2    39   Input ~ 0
+SPI-MISO
+Text GLabel 1600 4900 2    39   Output ~ 0
+ADC-RESET
+Wire Wire Line
+	1450 4000 1600 4000
+Wire Wire Line
+	1600 4600 1450 4600
+Wire Wire Line
+	1600 4700 1450 4700
+Wire Wire Line
+	1450 4800 1600 4800
+Wire Wire Line
+	1600 4900 1450 4900
+NoConn ~ 1450 5000
+NoConn ~ 1450 4500
+NoConn ~ 1450 4400
+NoConn ~ 1450 4300
+Text Notes 2050 4850 1    31   ~ 0
+SPI1 AF0
 $EndSCHEMATC
