@@ -1183,9 +1183,9 @@ Text GLabel 1600 3100 2    39   Output ~ 0
 LED4
 Text GLabel 1600 3200 2    39   Output ~ 0
 LED5
-Text GLabel 1600 3900 2    39   Output ~ 0
+Text GLabel 1600 4300 2    39   Output ~ 0
 LED6
-Text GLabel 1600 3800 2    39   Output ~ 0
+Text GLabel 1600 4400 2    39   Output ~ 0
 LED7
 Wire Wire Line
 	1850 1150 1650 1150
@@ -1651,9 +1651,9 @@ Wire Wire Line
 Wire Wire Line
 	1450 3100 1600 3100
 Wire Wire Line
-	1450 3800 1600 3800
+	1450 4300 1600 4300
 Wire Wire Line
-	1600 3900 1450 3900
+	1600 4400 1450 4400
 Wire Wire Line
 	1450 3200 1600 3200
 Wire Wire Line
@@ -1897,7 +1897,6 @@ Wire Wire Line
 Connection ~ 5750 1250
 Wire Wire Line
 	5750 1450 5750 1500
-NoConn ~ 1450 2600
 NoConn ~ 1450 5200
 NoConn ~ 1450 5300
 NoConn ~ 1450 5400
@@ -2466,7 +2465,7 @@ Text GLabel 1600 4000 2    39   Output ~ 0
 SPI-CS
 Text GLabel 1600 4700 2    39   Input ~ 0
 SPI-MISO
-Text GLabel 1600 4900 2    39   Output ~ 0
+Text GLabel 1600 2600 2    39   Output ~ 0
 ADC-RESET
 Wire Wire Line
 	1450 4000 1600 4000
@@ -2477,11 +2476,12 @@ Wire Wire Line
 Wire Wire Line
 	1450 4800 1600 4800
 Wire Wire Line
-	1600 4900 1450 4900
+	1600 2600 1450 2600
 NoConn ~ 1450 5000
 NoConn ~ 1450 4500
-NoConn ~ 1450 4400
-NoConn ~ 1450 4300
 Text Notes 2050 4850 1    31   ~ 0
 SPI1 AF0
+NoConn ~ 1450 4900
+NoConn ~ 1450 3900
+NoConn ~ 1450 3800
 $EndSCHEMATC

@@ -429,17 +429,6 @@ F 3 "" H 8850 850 50  0001 C CNN
 $EndComp
 $Comp
 L tinkerforge:ADS8698 U201
-U 2 1 5E0640C1
-P 4650 4000
-F 0 "U201" H 4842 4715 50  0000 C CNN
-F 1 "ADS8698" H 4842 4624 50  0000 C CNN
-F 2 "kicad-libraries:TSSOP38" H 8850 2900 50  0001 C CNN
-F 3 "" H 8850 2900 50  0001 C CNN
-	2    4650 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L tinkerforge:ADS8698 U201
 U 3 1 5E065AE6
 P 4650 5150
 F 0 "U201" H 4842 5765 50  0000 C CNN
@@ -573,23 +562,15 @@ Wire Wire Line
 Wire Wire Line
 	7300 4400 7300 4500
 Wire Wire Line
-	6500 4200 5950 4200
-Wire Wire Line
-	5950 4200 5950 4000
+	5600 4200 5600 4000
 Text GLabel 8200 4200 2    50   Output ~ 0
 SPI-MISO
-Text GLabel 7450 3900 2    50   Input ~ 0
+Text GLabel 8200 3900 2    50   Input ~ 0
 SPI-MOSI
-Text GLabel 7450 4100 2    50   Input ~ 0
+Text GLabel 8200 4100 2    50   Input ~ 0
 SPI-CLK
-Text GLabel 7450 4000 2    50   Input ~ 0
+Text GLabel 8200 4000 2    50   Input ~ 0
 SPI-CS
-Wire Wire Line
-	7300 3900 7450 3900
-Wire Wire Line
-	7450 4000 7300 4000
-Wire Wire Line
-	7300 4100 7450 4100
 $Comp
 L tinkerforge:C C233
 U 1 1 5E077C27
@@ -697,12 +678,6 @@ Wire Wire Line
 	6450 4300 6500 4300
 Wire Wire Line
 	7350 4300 7300 4300
-Wire Wire Line
-	4750 3900 6500 3900
-Wire Wire Line
-	4750 4000 5950 4000
-Wire Wire Line
-	4750 4200 5850 4200
 Wire Wire Line
 	4750 7150 4950 7150
 Wire Wire Line
@@ -1064,19 +1039,6 @@ Wire Wire Line
 	10000 1800 10000 1450
 Wire Wire Line
 	9700 1450 9700 1800
-$Comp
-L tinkerforge:R R255
-U 1 1 5E548BC0
-P 7900 4200
-F 0 "R255" V 7800 4250 50  0000 C CNN
-F 1 "47" V 7900 4200 50  0000 C CNN
-F 2 "kicad-libraries:R0402F" H 7900 4200 60  0001 C CNN
-F 3 "" H 7900 4200 60  0001 C CNN
-	1    7900 4200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8150 4200 8200 4200
 Wire Wire Line
 	7300 4200 7650 4200
 Text GLabel 10350 800  1    39   Output ~ 0
@@ -3324,15 +3286,11 @@ Connection ~ 9200 1450
 Wire Wire Line
 	9200 1450 9200 1800
 Wire Wire Line
-	4750 4100 6500 4100
+	5500 4200 5500 4050
 Wire Wire Line
-	5850 4200 5850 4050
+	5500 4050 5700 4050
 Wire Wire Line
-	5850 4050 6050 4050
-Wire Wire Line
-	6050 4050 6050 4000
-Wire Wire Line
-	6050 4000 6500 4000
+	5700 4050 5700 4000
 $Comp
 L tinkerforge:C C225
 U 1 1 5E5ED5D9
@@ -3359,4 +3317,52 @@ Wire Wire Line
 	10650 3450 10650 3100
 Wire Wire Line
 	10650 1800 10650 1450
+$Comp
+L tinkerforge:R_PACK4 RP206
+U 1 1 5E76FF3F
+P 7850 4250
+F 0 "RP206" H 7850 4700 50  0000 C CNN
+F 1 "470" H 7850 4450 50  0000 C CNN
+F 2 "kicad-libraries:4X0402" H 7850 4250 50  0001 C CNN
+F 3 "" H 7850 4250 50  0000 C CNN
+	1    7850 4250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4100 7650 4100
+Wire Wire Line
+	7300 4000 7650 4000
+Wire Wire Line
+	7300 3900 7650 3900
+Wire Wire Line
+	8050 3900 8200 3900
+Wire Wire Line
+	8200 4000 8050 4000
+Wire Wire Line
+	8050 4100 8200 4100
+Wire Wire Line
+	8200 4200 8050 4200
+Wire Wire Line
+	5600 4000 4750 4000
+Wire Wire Line
+	4750 4200 5500 4200
+$Comp
+L tinkerforge:ADS8698 U201
+U 2 1 5E0640C1
+P 4650 4000
+F 0 "U201" H 4842 4715 50  0000 C CNN
+F 1 "ADS8698" H 4842 4624 50  0000 C CNN
+F 2 "kicad-libraries:TSSOP38" H 8850 2900 50  0001 C CNN
+F 3 "" H 8850 2900 50  0001 C CNN
+	2    4650 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3900 6500 3900
+Wire Wire Line
+	5700 4000 6500 4000
+Wire Wire Line
+	4750 4100 6500 4100
+Wire Wire Line
+	5600 4200 6500 4200
 $EndSCHEMATC
