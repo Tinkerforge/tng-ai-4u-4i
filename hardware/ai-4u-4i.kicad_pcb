@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 29)
-    (tracks 2273)
+    (tracks 2269)
     (zones 0)
     (modules 207)
     (nets 142)
@@ -11,9 +11,9 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (1 GND power hide)
-    (2 VCC power)
+    (2 VCC power hide)
     (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.15)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
@@ -72,7 +72,7 @@
     (solder_mask_min_width 0.25)
     (aux_axis_origin 89.8 62.5)
     (grid_origin 89.8 62.5)
-    (visible_elements FFFE7F7F)
+    (visible_elements FFFEFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
@@ -3479,7 +3479,7 @@
       (net 61 "Net-(C119-Pad2)"))
     (pad 1 smd rect (at -3.81 -3.11 180) (size 2.7 2.7) (layers F.Cu F.Paste F.Mask)
       (net 72 "Net-(C121-Pad1)"))
-    (model ${KICAD_SYMBOL_DIR}/3d/Inductors/WE-SL5.wrl
+    (model Inductors/WE-SL5.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6526,6 +6526,11 @@
       (net 30 VCC))
     (pad 2 smd rect (at 3.5687 0 180) (size 2.794 3.81) (layers B.Cu B.Paste B.Mask)
       (net 13 AGND))
+    (model Housings_DO/SMC.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module kicad-libraries:R1206 (layer B.Cu) (tedit 58FA4AE5) (tstamp 5DD7AE03)
@@ -6581,6 +6586,11 @@
       (net 40 "Net-(LED101-Pad2)"))
     (pad 3 smd rect (at -0.425 0.22 90) (size 0.55 0.34) (layers F.Cu F.Paste F.Mask)
       (net 41 "Net-(LED101-Pad3)"))
+    (model LED_SMD/LED_RGB_LP.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module kicad-libraries:C1206 (layer F.Cu) (tedit 58FA4AE5) (tstamp 5E0DBC73)
@@ -8391,10 +8401,6 @@
   (via (at 169.65 125.05) (size 0.55) (drill 0.25) (layers F.Cu B.Cu) (net 70))
   (segment (start 170.15 124.1) (end 170.15 124.55) (width 0.4) (layer B.Cu) (net 70))
   (segment (start 170.15 124.55) (end 169.65 125.05) (width 0.4) (layer B.Cu) (net 70))
-  (via (at 172 124.1) (size 0.55) (drill 0.25) (layers F.Cu B.Cu) (net 70))
-  (segment (start 172.75 124.1) (end 172 124.1) (width 0.3) (layer B.Cu) (net 70))
-  (segment (start 172 124.1) (end 170.6 124.1) (width 0.3) (layer F.Cu) (net 70))
-  (segment (start 170.6 124.1) (end 169.65 125.05) (width 0.3) (layer F.Cu) (net 70))
   (via (at 170.85 120.5) (size 0.55) (drill 0.25) (layers F.Cu B.Cu) (net 70))
   (segment (start 171.7 120.3) (end 171.05 120.3) (width 0.3) (layer B.Cu) (net 70))
   (segment (start 171.05 120.3) (end 170.85 120.5) (width 0.3) (layer B.Cu) (net 70))
@@ -10004,14 +10010,7 @@
         (xy 168.152 124.990708) (xy 168.152 124.940708) (xy 168.128866 124.824403) (xy 168.083486 124.714846) (xy 168.017604 124.616247)
         (xy 167.933753 124.532396) (xy 167.835154 124.466514) (xy 167.725597 124.421134) (xy 167.609292 124.398) (xy 167.490708 124.398)
         (xy 167.374403 124.421134) (xy 167.264846 124.466514) (xy 167.166247 124.532396) (xy 167.082396 124.616247) (xy 167.016514 124.714846)
-        (xy 166.971134 124.824403) (xy 166.948 124.940708) (xy 153.077 124.940708) (xy 153.077 124.040708) (xy 171.398 124.040708)
-        (xy 171.398 124.159292) (xy 171.421134 124.275597) (xy 171.466514 124.385154) (xy 171.532396 124.483753) (xy 171.616247 124.567604)
-        (xy 171.714846 124.633486) (xy 171.824403 124.678866) (xy 171.940708 124.702) (xy 172.059292 124.702) (xy 172.175597 124.678866)
-        (xy 172.285154 124.633486) (xy 172.383753 124.567604) (xy 172.467604 124.483753) (xy 172.533486 124.385154) (xy 172.578866 124.275597)
-        (xy 172.602 124.159292) (xy 172.602 124.040708) (xy 172.578866 123.924403) (xy 172.533486 123.814846) (xy 172.467604 123.716247)
-        (xy 172.383753 123.632396) (xy 172.285154 123.566514) (xy 172.175597 123.521134) (xy 172.059292 123.498) (xy 171.940708 123.498)
-        (xy 171.824403 123.521134) (xy 171.714846 123.566514) (xy 171.616247 123.632396) (xy 171.532396 123.716247) (xy 171.466514 123.814846)
-        (xy 171.421134 123.924403) (xy 171.398 124.040708) (xy 153.077 124.040708) (xy 153.077 122.340708) (xy 156.798 122.340708)
+        (xy 166.971134 124.824403) (xy 166.948 124.940708) (xy 153.077 124.940708) (xy 153.077 122.340708) (xy 156.798 122.340708)
         (xy 156.798 122.459292) (xy 156.821134 122.575597) (xy 156.866514 122.685154) (xy 156.932396 122.783753) (xy 157.016247 122.867604)
         (xy 157.114846 122.933486) (xy 157.224403 122.978866) (xy 157.340708 123.002) (xy 157.459292 123.002) (xy 157.575597 122.978866)
         (xy 157.685154 122.933486) (xy 157.783753 122.867604) (xy 157.867604 122.783753) (xy 157.933486 122.685154) (xy 157.978866 122.575597)
