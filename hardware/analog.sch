@@ -3365,4 +3365,6 @@ Wire Wire Line
 	4750 4100 6500 4100
 Wire Wire Line
 	5600 4200 6500 4200
+Text Notes 2600 600  0    50   ~ 0
+P/N input matching 100+1000 =1100
 $EndSCHEMATC
