@@ -35,6 +35,7 @@ SET(SOURCES
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/tng.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/tng_firmware.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/tng_communication.c"
+	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/tng_led.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/usb_stm32/usb.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/usb_stm32/usbd_tfp.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/tng/usb_stm32/usbd_conf.c"
@@ -58,6 +59,7 @@ SET(SOURCES
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/stm32cubef0/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/stm32cubef0/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/stm32cubef0/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c"
+	"${PROJECT_SOURCE_DIR}/src/bricklib2/stm32cubef0/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi.c"
 
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/stm32cubef0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c"
 	"${PROJECT_SOURCE_DIR}/src/bricklib2/stm32cubef0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c"

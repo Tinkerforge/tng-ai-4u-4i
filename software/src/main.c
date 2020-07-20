@@ -27,7 +27,7 @@
 
 int main(void) {
 	logging_init();
-	logd("Start TNG-HUB\n\r");
+	logd("Start TNG-AI-4U-AI\n\r");
 
 	ads8698_init();
 
