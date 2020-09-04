@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "TNG AI 4U 4I"
+Date "2020-09-04"
+Rev "1.1"
+Comp "Tinkerforge GmbH"
+Comment1 "Licensed under CERN OHL v.1.1"
+Comment2 "Copyright (©) 2020, B.Nordmeyer <bastian@tinkerforge.com>"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -3234,7 +3234,7 @@ AR Path="/5E97A9D9" Ref="C?"  Part="1"
 AR Path="/5AFDB425/5E97A9D9" Ref="C234"  Part="1" 
 F 0 "C234" H 6850 1600 31  0000 L CNN
 F 1 "100µF/35V" V 6900 1300 31  0000 L CNN
-F 2 "kicad-libraries:ELKO_83" H 7000 1550 60  0001 C CNN
+F 2 "kicad-libraries:ELKO_63" H 7000 1550 60  0001 C CNN
 F 3 "" H 7000 1550 60  0000 C CNN
 	1    7000 1550
 	-1   0    0    -1  
